@@ -139,6 +139,9 @@ pub enum Subcommand {
         #[clap(long)]
         preview: bool,
 
+        #[clap(long)]
+        gh194: bool,
+
         /// Directory in which to store the backup.
         /// It will be created if it does not already exist.
         /// When not specified, this defers to the config file.
@@ -919,6 +922,7 @@ mod tests {
                 debug: false,
                 sub: Some(Subcommand::Backup {
                     preview: false,
+                    gh194: false,
                     path: None,
                     force: false,
                     no_force_cloud_conflict: false,
@@ -983,6 +987,7 @@ mod tests {
                 debug: false,
                 sub: Some(Subcommand::Backup {
                     preview: true,
+                    gh194: false,
                     path: Some(StrictPath::relative(s("tests/backup"), Some(repo_raw()))),
                     force: true,
                     no_force_cloud_conflict: true,
@@ -1017,6 +1022,7 @@ mod tests {
                 debug: false,
                 sub: Some(Subcommand::Backup {
                     preview: false,
+                    gh194: false,
                     path: Some(StrictPath::relative(s("tests/fake"), Some(repo_raw()))),
                     force: false,
                     no_force_cloud_conflict: false,
@@ -1059,6 +1065,7 @@ mod tests {
                     debug: false,
                     sub: Some(Subcommand::Backup {
                         preview: false,
+                        gh194: false,
                         path: None,
                         force: false,
                         no_force_cloud_conflict: false,
@@ -1094,6 +1101,7 @@ mod tests {
                 debug: false,
                 sub: Some(Subcommand::Backup {
                     preview: false,
+                    gh194: false,
                     path: None,
                     force: false,
                     no_force_cloud_conflict: false,
