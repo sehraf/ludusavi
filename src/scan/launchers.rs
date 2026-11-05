@@ -1,3 +1,4 @@
+mod epic;
 mod faugus;
 mod generic;
 pub mod heroic;
@@ -68,6 +69,7 @@ impl Launchers {
 
             log::debug!("Scanning launcher info: {:?}", &root);
             let mut found = match root {
+                Root::Epic(epic_root) if epic::has_installations(epic_root) => epic::scan(epic_root, title_finder),
                 Root::Faugus(root) => faugus::scan(root, title_finder),
                 Root::Heroic(root) => heroic::scan(root, title_finder, legendary.as_ref()),
                 Root::Legendary(root) => legendary::scan(root, title_finder),

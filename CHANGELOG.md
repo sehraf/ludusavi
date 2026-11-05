@@ -1,6 +1,8 @@
 ## Unreleased
 
 * Added:
+  * Ludusavi can now read game info from the Epic Games Launcher's `installations.jsonl`,
+    including Wine prefixes from the launcher's Linux preview.
   * _Experimental_:
     Ludusavi can now translate native Windows file paths into Wine prefixes and vice versa.
     During a scan, these will appear like any other redirected path.

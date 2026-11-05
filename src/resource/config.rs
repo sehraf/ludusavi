@@ -1503,6 +1503,9 @@ impl Config {
         if let Some(data_dir) = CommonPath::Data.get() {
             candidates.push((format!("{data_dir}/heroic"), Store::Heroic));
         }
+        if let Some(data_local_dir) = CommonPath::DataLocal.get() {
+            candidates.push((format!("{data_local_dir}/com.epicgames.eglv2"), Store::Epic));
+        }
 
         let detected_steam = match steamlocate::SteamDir::locate() {
             Ok(steam_dir) => match steam_dir.library_paths() {

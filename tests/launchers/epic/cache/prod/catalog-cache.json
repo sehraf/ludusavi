@@ -1,0 +1,11 @@
+{
+  "items": {
+    "017e3132e017486bbb3a9a641c984b3a": {"item": {"id": "017e3132e017486bbb3a9a641c984b3a", "title": "20XX"}},
+    "ba72ad8df75e4917bfc9655f583b171f": {"item": {"id": "ba72ad8df75e4917bfc9655f583b171f", "title": "Nova Lands"}},
+    "75a5bee8052f4e2498094b2faaea8c11": {"item": {"id": "75a5bee8052f4e2498094b2faaea8c11", "title": "Dead Island 2"}},
+    "c2dd8a25b569404f9f88950d7691b83e": {"item": {"id": "c2dd8a25b569404f9f88950d7691b83e", "title": "Flotsam"}},
+    "1e38b618d106430db94b474abbfecc16": {"item": {"id": "1e38b618d106430db94b474abbfecc16", "title": "Slime Rancher"}}
+  },
+  "schemaVersion": 1,
+  "locale": "en-US"
+}

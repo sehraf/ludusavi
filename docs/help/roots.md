@@ -25,6 +25,15 @@ along with the root's type:
 
   When using Wine prefixes with Heroic, Ludusavi will back up the `*.reg` files
   if the game is known to have registry-based saves.
+* For an Epic root, this can be either the folder where games are installed
+  (e.g., `C:/Program Files/Epic Games`) or the launcher's data folder containing
+  `installations.jsonl`, which is typically:
+  * Windows: `~/AppData/Local/com.epicgames.eglv2`
+  * Linux: `~/.local/share/com.epicgames.eglv2`
+
+  When using the data folder, Ludusavi looks up game titles in the launcher's catalog cache
+  (`cache/prod/catalog-cache.json`).
+  On Linux, Ludusavi can also find saves in the launcher's Wine prefixes.
 * For a Legendary root, this should be the folder containing `installed.json`.
   Currently, Ludusavi cannot detect Wine prefixes for Legendary roots.
 * For a Lutris root, this should be the folder containing the `games` subdirectory.
